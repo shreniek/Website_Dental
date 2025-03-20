@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. Sidhanti Nyahatkar - Award-winning dental surgeon and researcher with expertise in exosomes and oral oncology. Collaborations with Harvard, AIIMS Delhi, and other top institutions.">
+  <meta name="keywords" content="dental surgeon, researcher, exosomes, oral oncology, research consultant, Amravati, Maharashtra, Harvard, AIIMS Delhi, publications">
+  <title>Dr. Sidhanti Nyahatkar - Dental Surgeon & Research Consultant</title>
+  <style>
+    :root {
+      --primary-color: #0046ad;
+      --primary-light: rgba(0, 70, 173, 0.08);
+      --secondary-color: #f9fafc;
+      --accent-color: #00c9a7;
+      --text-dark: #2c3e50;
+      --text-light: #6c757d;
+      --text-lighter: #a0aec0;
+      --white: #ffffff;
+      --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --border-radius: 8px;
+      --transition: all 0.3s ease;
+      --max-width: 1280px;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background-color: var(--white);
+      overflow-x: hidden;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      letter-spacing: -0.02em;
+    }
+    
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      letter-spacing: -0.01em;
+    }
+    
+    h3 {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--text-light);
+    }
+    
+    .text-highlight {
+      color: var(--primary-color);
+    }
+    
+    .section-title {
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+    
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.75rem;
+      background-color: var(--primary-color);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+      background-color: #0039a2;
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+    
+    .btn-outline:hover {
+      background-color: var(--primary-color);
+      color: var(--white);
+    }
+    
+    /* Header & Navigation */
+    header {
+      padding: 1.5rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--white);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    
+    header.scrolled {
+      padding: 1rem 0;
+      box-shadow: var(--shadow);
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--text-dark);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo span {
+      color: var(--primary-color);
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: var(--transition);
+      position: relative;
+      padding: 0.5rem 0;
+    }
+    
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary-color);
+    }
+    
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--primary-color);
+      transition: width 0.3s;
+    }
+    
+    .nav-links a:hover::after, .nav-links a.active::after {
+      width: 100%;
+    }
+    
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 8rem 0 4rem;
+      background: linear-gradient(135deg, var(--secondary-color) 0%, #f0f4f8 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="1" fill="%231E3A8A" opacity="0.1"/></svg>');
+      background-size: 20px 20px;
+      opacity: 0.3;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 650px;
+    }
+    
+    .hero-heading {
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero-subheading {
+      font-size: clamp(1.2rem, 2vw, 1.4rem);
+      margin-bottom: 2rem;
+      color: var(--text-light);
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .hero-image {
+      position: absolute;
+      right: -5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50%;
+      max-width: 600px;
+      z-index: 0;
+      opacity: 0.9;
+    }
+    
+    /* Collaboration badges */
+    .collaborations {
+      padding: 3rem 0;
+      background-color: var(--white);
+    }
+    
+    .collaborations-title {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      color: var(--text-lighter);
+      margin-bottom: 2rem;
+    }
+    
+    .collaborations-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+    
+    .collaboration-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: var(--transition);
+    }
+    
+    .collaboration-item img {
+      height: 50px;
+      filter: grayscale(100%);
+      opacity: 0.7;
+      transition: var(--transition);
+    }
+    
+    .collaboration-item:hover img {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+    
+    /* About Section */
+    .about {
+      padding: 5rem 0;
+      background-color: var(--secondary-color);
+    }
+    
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .profile-card {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .profile-info h3 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .profile-info p {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+    
+    .profile-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    .profile-badge {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--primary-light);
+      color: var(--primary-color);
+      padding: 0.25rem 0.5rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+    
+    /* Services Section */
+    .services {
+      padding: 5rem 0;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .service-card {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border-top: 4px solid transparent;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-top-color: var(--primary-color);
+    }
+    
+    .featured-service {
+      border-top-color: var(--accent-color);
+    }
+    
+    .service-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .service-title {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+    }
+    
+    .service-description {
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-action {
+      margin-top: auto;
+      color: var(--primary-color);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .modal.active {
+      opacity: 1;
+    }
+    
+    .modal-content {
+      background-color: var(--white);
+      margin: 5% auto;
+      padding: 2rem;
+      width: 90%;
+      max-width: 800px;
+      border-radius: var(--border-radius);
+      position: relative;
+      transform: translateY(-50px);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .modal.active .modal-content {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .modal-title {
+      margin-bottom: 0;
+    }
+    
+    .close-modal {
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: var(--transition);
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    
+    .close-modal:hover {
+      background-color: #f8f9fa;
+      color: var(--primary-color);
+    }
+    
+    /* Rate Table */
+    .rate-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+    }
+    
+    .rate-table th, .rate-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .rate-table th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+    }
+    
+    .rate-table tr:hover {
+      background-color: var(--primary-light);
+    }
+    
+    .rate-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .collaboration-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .collaboration-badge {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--primary-light);
+      color: var(--primary-color);
+      padding: 0.5rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+    
+    .collaboration-badge::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    
+    /* Contact Section */
+    .contact {
+      padding: 5rem 0;
+      background-color: var(--secondary-color);
+    }
+    
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    
+    .contact-form {
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--border-radius);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(0, 70, 173, 0.1);
+    }
+    
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .contact-detail {
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-detail h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--text-light);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    .contact-link:hover {
+      color: var(--primary-color);
+    }
+    
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      background-color: var(--primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-color);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--white);
+      color: var(--text-dark);
+      border: 1px solid #e2e8f0;
+      transition: var(--transition);
+    }
+    
+    .social-link:hover {
+      background-color: var(--primary-color);
+      color: var(--white);
+      border-color: var(--primary-color);
+    }
+    
+    /* Footer */
+    footer {
+      background-color: var(--text-dark);
+      color: var(--white);
+      padding: 3rem 0;
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    
+    .footer-info {
+      max-width: 300px;
+    }
+    
+    .footer-links h3 {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+    
+    .footer-links ul {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+    
+    .footer-links a {
+      color: var(--text-lighter);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    .footer-links a:hover {
+      color: var(--white);
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      text-align: center;
+      color: var(--text-lighter);
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+      .hero-image {
+        right: -10%;
+        width: 55%;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .hero-image {
+        display: none;
+      }
+      
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-menu-btn {
+        display: block;
+      }
+      
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5rem 2rem;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+      }
+      
+      .nav-links.active {
+        right: 0;
+      }
+      
+      .profile-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        gap: 3rem;
+      }
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animate {
+      opacity: 0;
+      animation: fadeIn 0.6s ease forwards;
+    }
+    
+    .delay-1 {
+      animation-delay: 0.2s;
+    }
+    
+    .delay-2 {
+      animation-delay: 0.4s;
+    }
+    
+    .delay-3 {
+      animation-delay: 0.6s;
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Dr. Sidhanti <span>Nyahatkar</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="btn btn-outline">Book Appointment</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </nav>
+    </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Header Scroll Effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
+    
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+    
+    // Modal Functionality
+    function openModal(service) {
+      const modal = document.getElementById(service + 'Modal');
+      document.body.style.overflow = 'hidden';
+      modal.style.display = 'block';
+      setTimeout(() => {
+        modal.classList.add('active');
+      }, 10);
+    }
+    
+    function closeModal(service) {
+      const modal = document.getElementById(service + 'Modal');
+      modal.classList.remove('active');
+      setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }, 300);
+    }
+    
+    // Close modal when clicking outside content
+    window.addEventListener('click', function(event) {
+      if (event.target.classList.contains('modal')) {
+        const serviceId = event.target.id.replace('Modal', '');
+        closeModal(serviceId);
+      }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        if (this.getAttribute('href').length > 1) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            const headerHeight = document.getElementById('header').offsetHeight;
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+            
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            if (navLinks.classList.contains('active')) {
+              navLinks.classList.remove('active');
+            }
+          }
+        }
+      });
+    });
+    
+    // Form submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show success message (in a real implementation, you would send the form data to a server)
+        alert('Thank you for your message! I will get back to you soon.');
+        
+        // Reset form
+        this.reset();
+      });
+    }
+    
+    // Scroll reveal animation
+    document.addEventListener('DOMContentLoaded', function() {
+      const animateElements = document.querySelectorAll('.animate');
+      
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      animateElements.forEach(element => {
+        observer.observe(element);
+      });
+    });
+  </script>
+</body>
+</html>
+  
+  <div id="statisticsModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Statistical Analysis - Rates</h2>
+        <span class="close-modal" onclick="closeModal('statistics')">&times;</span>
+      </div>
+      
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Rate (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sample Size Calculation</td>
+            <td>Determining appropriate sample size</td>
+            <td>3,000 - 6,000</td>
+          </tr>
+          <tr>
+            <td>Data Cleaning</td>
+            <td>Data preparation and cleaning</td>
+            <td>5,000 - 10,000</td>
+          </tr>
+          <tr>
+            <td>Descriptive Statistics</td>
+            <td>Basic descriptive analysis</td>
+            <td>4,000 - 8,000</td>
+          </tr>
+          <tr>
+            <td>Inferential Statistics</td>
+            <td>Hypothesis testing, correlations, etc.</td>
+            <td>8,000 - 20,000</td>
+          </tr>
+          <tr>
+            <td>Advanced Multivariate Analysis</td>
+            <td>Regression, factor analysis, cluster analysis</td>
+            <td>15,000 - 30,000</td>
+          </tr>
+          <tr>
+            <td>Results Interpretation</td>
+            <td>Detailed explanation of statistical findings</td>
+            <td>7,000 - 15,000</td>
+          </tr>
+          <tr>
+            <td>Data Visualization</td>
+            <td>Creation of charts, graphs, and tables</td>
+            <td>5,000 - 12,000</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p style="margin-top: 1.5rem; font-style: italic; color: #666;">* Rates depend on data complexity, sample size, and analysis requirements. Software costs may be additional if specialized programs are required.</p>
+    </div>
+  </div>
+  
+  <div id="consultationModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Medical Research Consultation - Rates</h2>
+        <span class="close-modal" onclick="closeModal('consultation')">&times;</span>
+      </div>
+      
+      <p style="margin-bottom: 1.5rem;">As a recognized expert in exosome research and oral oncology with international speaking experience in Paris, Barcelona, Italy, and London, I offer specialized research consultation services.</p>
+      
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Rate (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>General Research Consultation</td>
+            <td>Per hour advisory session</td>
+            <td>2,500/hour</td>
+          </tr>
+          <tr style="background-color: rgba(0, 70, 173, 0.1);">
+            <td>Exosome Research</td>
+            <td>Specialized consultation for exosome research and applications</td>
+            <td>4,000/hour</td>
+          </tr>
+          <tr style="background-color: rgba(0, 70, 173, 0.1);">
+            <td>Oncology Research</td>
+            <td>Specialized consultation for cancer research</td>
+            <td>3,500/hour</td>
+          </tr>
+          <tr>
+            <td>Orthopedics Research</td>
+            <td>Specialized consultation for orthopedic research</td>
+            <td>3,500/hour</td>
+          </tr>
+          <tr>
+            <td>Gastrology Research</td>
+            <td>Specialized consultation for gastrological research</td>
+            <td>3,500/hour</td>
+          </tr>
+          <tr>
+            <td>Gynecology Research</td>
+            <td>Specialized consultation for gynecological research</td>
+            <td>3,500/hour</td>
+          </tr>
+          <tr>
+            <td>Dental Research</td>
+            <td>Specialized consultation for dental research</td>
+            <td>3,000/hour</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p style="margin-top: 1.5rem; font-style: italic; color: #666;">* Consultation packages available for ongoing projects. Remote consultations (video call) available at the same rates.</p>
+    </div>
+  </div>
+  
+  <div id="editingModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Editing & Review - Rates</h2>
+        <span class="close-modal" onclick="closeModal('editing')">&times;</span>
+      </div>
+      
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Rate (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Proofreading</td>
+            <td>Grammar, spelling, and punctuation check</td>
+            <td>3/word</td>
+          </tr>
+          <tr>
+            <td>Copy Editing</td>
+            <td>Improving clarity, flow, and style</td>
+            <td>5/word</td>
+          </tr>
+          <tr>
+            <td>Substantive Editing</td>
+            <td>In-depth content review and improvement</td>
+            <td>8/word</td>
+          </tr>
+          <tr>
+            <td>Journal-Specific Formatting</td>
+            <td>Adapting manuscript to journal guidelines</td>
+            <td>5,000 - 10,000</td>
+          </tr>
+          <tr>
+            <td>Pre-submission Review</td>
+            <td>Comprehensive review before journal submission</td>
+            <td>15,000 - 25,000</td>
+          </tr>
+          <tr>
+            <td>Peer Review Simulation</td>
+            <td>Critical assessment similar to journal review</td>
+            <td>20,000 - 30,000</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p style="margin-top: 1.5rem; font-style: italic; color: #666;">* Word count based rates apply to standard academic writing. Expedited services available at 50% additional cost.</p>
+    </div>
+  </div></td>
+          </tr>
+          <tr>
+            <td>Research Ethics Consultation</td>
+            <td>Guidance on ethical considerations and approvals</td>
+            <td>3,000/hour
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content animate">
+        <h1 class="hero-heading">Excellence in <span class="text-highlight">Dental Care</span> & Medical <span class="text-highlight">Research</span></h1>
+        <p class="hero-subheading">Award-winning BDS dentist and researcher with 30+ published papers specializing in oncology and exosome research. Providing expert research consultation, publication assistance, and comprehensive dental care.</p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn">Explore Services</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <svg class="hero-image" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="250" cy="250" r="200" fill="#ECF4FF" />
+        <path d="M347.5 170C347.5 204.518 319.518 232.5 285 232.5C250.482 232.5 222.5 204.518 222.5 170C222.5 135.482 250.482 107.5 285 107.5C319.518 107.5 347.5 135.482 347.5 170Z" fill="#0046AD" fillOpacity="0.1" />
+        <path d="M277.5 330C277.5 364.518 249.518 392.5 215 392.5C180.482 392.5 152.5 364.518 152.5 330C152.5 295.482 180.482 267.5 215 267.5C249.518 267.5 277.5 295.482 277.5 330Z" fill="#0046AD" fillOpacity="0.1" />
+        <path d="M285 240C337.467 240 380 197.467 380 145C380 92.5329 337.467 50 285 50C232.533 50 190 92.5329 190 145C190 197.467 232.533 240 285 240ZM285 90C315.376 90 340 114.624 340 145C340 175.376 315.376 200 285 200C254.624 200 230 175.376 230 145C230 114.624 254.624 90 285 90Z" fill="#0046AD" />
+        <path d="M215 400C267.467 400 310 357.467 310 305C310 252.533 267.467 210 215 210C162.533 210 120 252.533 120 305C120 357.467 162.533 400 215 400ZM215 250C245.376 250 270 274.624 270 305C270 335.376 245.376 360 215 360C184.624 360 160 335.376 160 305C160 274.624 184.624 250 215 250Z" fill="#0046AD" />
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">Dr. Sidhanti Nyahatkar</div>
+          <p>Award-winning dental surgeon and researcher specializing in exosomes and oral oncology. Providing comprehensive research consultation and dental care services.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#" onclick="openModal('dental'); return false;">Dental Services</a></li>
+            <li><a href="#" onclick="openModal('research'); return false;">Research Paper Publication</a></li>
+            <li><a href="#" onclick="openModal('thesis'); return false;">Thesis Development</a></li>
+            <li><a href="#" onclick="openModal('statistics'); return false;">Statistical Analysis</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:nyahatkar@example.com">nyahatkar@example.com</a></li>
+            <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+            <li><a href="#">Amravati, Maharashtra</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dr. Sidhanti Nyahatkar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div id="dentalModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Dental Services - Rates</h2>
+        <span class="close-modal" onclick="closeModal('dental')">&times;</span>
+      </div>
+      
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Rate (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>General Consultation</td>
+            <td>Initial examination and diagnosis</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>Dental Cleaning</td>
+            <td>Professional teeth cleaning</td>
+            <td>1,000</td>
+          </tr>
+          <tr>
+            <td>Filling</td>
+            <td>Tooth restoration</td>
+            <td>1,200 - 2,500</td>
+          </tr>
+          <tr>
+            <td>Root Canal Treatment</td>
+            <td>Root canal therapy per tooth</td>
+            <td>3,500 - 8,000</td>
+          </tr>
+          <tr>
+            <td>Extraction</td>
+            <td>Simple tooth extraction</td>
+            <td>1,000 - 3,000</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p style="margin-top: 1.5rem; font-style: italic; color: #666;">* Rates may vary based on complexity of the case. A detailed quote will be provided after initial consultation.</p>
+      
+      <div style="margin-top: 2rem;">
+        <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">Institutional Collaborations</h3>
+        <div class="collaboration-badges">
+          <span class="collaboration-badge">Harvard University</span>
+          <span class="collaboration-badge">AIIMS Delhi</span>
+          <span class="collaboration-badge">Johns Hopkins</span>
+          <span class="collaboration-badge">Tata Memorial Hospital</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="researchModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Research Paper Publication - Rates</h2>
+        <span class="close-modal" onclick="closeModal('research')">&times;</span>
+      </div>
+      
+      <p style="margin-bottom: 1.5rem;">As an experienced researcher with 30+ published papers in high-impact journals including ACS Applied Bio Materials, The Journal of Liquid Biopsy, and Clinical and Translational Discovery, I provide comprehensive research publication services.</p>
+      
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Rate (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Initial Consultation</td>
+            <td>Research idea assessment and planning</td>
+            <td>2,000</td>
+          </tr>
+          <tr>
+            <td>Literature Review</td>
+            <td>Comprehensive review of existing literature</td>
+            <td>10,000 - 25,000</td>
+          </tr>
+          <tr>
+            <td>Manuscript Writing</td>
+            <td>Full paper writing with all sections</td>
+            <td>30,000 - 50,000</td>
+          </tr>
+          <tr>
+            <td>Journal Selection</td>
+            <td>Identifying suitable journals for publication</td>
+            <td>5,000</td>
+          </tr>
+          <tr>
+            <td>Submission Support</td>
+            <td>Handling journal submission process</td>
+            <td>8,000</td>
+          </tr>
+          <tr>
+            <td>Revision Support</td>
+            <td>Addressing reviewer comments</td>
+            <td>10,000 - 20,000</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p style="margin-top: 1.5rem; font-style: italic; color: #666;">* Rates depend on complexity, length, and research area. Package deals available for complete publication assistance.</p>
+      
+      <div style="margin-top: 2rem;">
+        <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">Featured Publications:</h3>
+        <ul style="list-style-type: none; padding-left: 0;">
+          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+            <span style="position: absolute; left: 0; top: 0.5rem; width: 6px; height: 6px; border-radius: 50%; background-color: var(--primary-color);"></span>
+            <strong>Kalele K., Nyahatkar S., et al. (2024).</strong> Exosomes: A Cutting-Edge Theranostics Tool for Oral Cancer. ACS Applied Bio Materials, 7(3), 1400-1415.
+          </li>
+          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+            <span style="position: absolute; left: 0; top: 0.5rem; width: 6px; height: 6px; border-radius: 50%; background-color: var(--primary-color);"></span>
+            <strong>Nyahatkar S., Kalele K. (2024).</strong> Exosomes-Based Liquid Biopsy: An Effective Approach for Drugs and Therapeutics Resistance Screening in Cancer. The Journal of Liquid Biopsy, 4, 100144.
+          </li>
+          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+            <span style="position: absolute; left: 0; top: 0.5rem; width: 6px; height: 6px; border-radius: 50%; background-color: var(--primary-color);"></span>
+            <strong>Sonar S., Nyahatkar S., Kalele K. (2024).</strong> Tumor and Cancer Stem Cells‐Derived Exosomes Interplay: A Secret of Cancer Complications. Clinical and Translational Discovery, 4(4).
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="thesisModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Thesis Development - Rates</h2>
+        <span class="close-modal" onclick="closeModal('thesis')">&times;</span>
+      </div>
+      
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Rate (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Topic Selection</td>
+            <td>Research gap analysis and topic finalization</td>
+            <td>8,000 - 15,000</td>
+          </tr>
+          <tr>
+            <td>Research Proposal</td>
+            <td>Developing comprehensive research proposal</td>
+            <td>15,000 - 25,000</td>
+          </tr>
+          <tr>
+            <td>Literature Review Chapter</td>
+            <td>Comprehensive review chapter</td>
+            <td>20,000 - 40,000</td>
+          </tr>
+          <tr>
+            <td>Methodology Chapter</td>
+            <td>Research design and methodology</td>
+            <td>15,000 - 30,000</td>
+          </tr>
+          <tr>
+            <td>Results & Discussion</td>
+            <td>Data analysis, results, and discussion</td>
+            <td>25,000 - 50,000</td>
+          </tr>
+          <tr>
+            <td>Complete Master's Thesis</td>
+            <td>End-to-end thesis development</td>
+            <td>80,000 - 150,000</td>
+          </tr>
+          <tr>
+            <td>Complete PhD Thesis</td>
+            <td>End-to-end thesis development</td>
+            <td>180,000 - 300,000</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p style="margin-top: 1.5rem; font-style: italic; color: #666;">* Rates depend on research area, complexity, and timeline. Payment structure typically divided into installments based on project milestones.</p>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title animate">Contact Me</h2>
+      <div class="contact-container">
+        <div class="contact-form animate delay-1">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" class="form-control">
+            </div>
+            
+            <div class="form-group">
+              <label for="service" class="form-label">Service Interested In</label>
+              <select id="service" class="form-control">
+                <option value="">Select a service</option>
+                <option value="dental">Dental Services</option>
+                <option value="research">Research Paper Publication</option>
+                <option value="thesis">Thesis Development</option>
+                <option value="statistics">Statistical Analysis</option>
+                <option value="consultation">Medical Research Consultation</option>
+                <option value="editing">Editing & Review</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" class="form-control" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+        
+        <div class="contact-info animate delay-2">
+          <div class="contact-detail">
+            <h3>Email</h3>
+            <a href="mailto:nyahatkar@example.com" class="contact-link">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              nyahatkar@example.com
+            </a>
+          </div>
+          
+          <div class="contact-detail">
+            <h3>Phone</h3>
+            <a href="tel:+919999999999" class="contact-link">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              +91 99999 99999
+            </a>
+          </div>
+          
+          <div class="contact-detail">
+            <h3>Location</h3>
+            <a href="#" class="contact-link">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              Amravati, Maharashtra, India
+            </a>
+          </div>
+          
+          <div class="contact-detail">
+            <h3>Connect with me</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/Sidhanti/" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="collaborations animate delay-1">
+    <div class="container">
+      <p class="collaborations-title">Collaborated with</p>
+      <div class="collaborations-list">
+        <div class="collaboration-item">
+          <img src="/api/placeholder/120/60" alt="Harvard University" />
+        </div>
+        <div class="collaboration-item">
+          <img src="/api/placeholder/120/60" alt="AIIMS Delhi" />
+        </div>
+        <div class="collaboration-item">
+          <img src="/api/placeholder/120/60" alt="Johns Hopkins" />
+        </div>
+        <div class="collaboration-item">
+          <img src="/api/placeholder/120/60" alt="Tata Memorial Hospital" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title animate">About Me</h2>
+      
+      <div class="profile-card animate delay-1">
+        <div class="profile-image">
+          <img src="/api/placeholder/120/120" alt="Dr. Sidhanti Nyahatkar" />
+        </div>
+        <div class="profile-info">
+          <h3>Dr. Sidhanti S. Nyahatkar</h3>
+          <p>I provide comprehensive research consultation services to students, professionals, doctors, and lecturers, with particular expertise in exosome research, cancer theranostics, liquid biopsy, and nanomedicine. My clinical experience includes treating over 500 patients and performing 200+ successful dental procedures at Sumukh Multispeciality Dental Clinic. I am committed to advancing medical research while maintaining the highest standards of scientific integrity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title animate">My Services</h2>
+      
+      <div class="services-grid">
+        <div class="service-card animate delay-1" onclick="openModal('dental')">
+          <div class="service-content">
+            <h3 class="service-title">Dental Services</h3>
+            <p class="service-description">Professional dental care and consultation for various dental conditions and treatments.</p>
+            <div class="service-action">
+              View Rates
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="service-card featured-service animate delay-1" onclick="openModal('research')">
+          <div class="service-content">
+            <h3 class="service-title">Research Paper Publication</h3>
+            <p class="service-description">Complete guidance from conceptualization to publication of research papers in reputed journals. Specialized in exosomes and oncology research.</p>
+            <div class="service-action">
+              View Rates
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="service-card animate delay-2" onclick="openModal('thesis')">
+          <div class="service-content">
+            <h3 class="service-title">Thesis Development</h3>
+            <p class="service-description">Assistance with Master's and PhD thesis projects including structure, methodology, and literature review.</p>
+            <div class="service-action">
+              View Rates
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="service-card animate delay-2" onclick="openModal('statistics')">
+          <div class="service-content">
+            <h3 class="service-title">Statistical Analysis</h3>
+            <p class="service-description">Expert statistical services for medical research including data analysis, interpretation, and presentation.</p>
+            <div class="service-action">
+              View Rates
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="service-card animate delay-3" onclick="openModal('consultation')">
+          <div class="service-content">
+            <h3 class="service-title">Medical Research Consultation</h3>
+            <p class="service-description">Specialized consultation for various medical fields including oncology, orthopedics, gastrology, gynecology, and more.</p>
+            <div class="service-action">
+              View Rates
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="service-card animate delay-3" onclick="openModal('editing')">
+          <div class="service-content">
+            <h3 class="service-title">Editing & Review</h3>
+            <p class="service-description">Professional editing, proofreading, and review services for medical manuscripts and papers.</p>
+            <div class="service-action">
+              View Rates
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><strong>BDS, Research Consultant</strong> (Reg no - A52887)</p>
+          <p>Dental Surgeon • Associate Researcher • Medical Writer</p>
+          <div class="profile-badges">
+            <span class="profile-badge">Exosomes Expert</span>
+            <span class="profile-badge">Oral Oncology</span>
+            <span class="profile-badge">30+ Publications</span>
+            <span class="profile-badge">Youngest Scientist Award</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-content animate delay-2">
+        <p>I am Dr. Sidhanti Somprakash Nyahatkar, a qualified dental surgeon with a Bachelor in Dental Surgery (BDS) degree from Vidharbha Youth Welfare Society Dental College and Hospital. As an Associate Researcher at Neuron Institute of Applied Research in Amravati, I have produced over 30 high-impact research papers, reviews, meta-analyses, case reports, and patents.</p>
+        
+        <p>My research expertise is primarily focused on exosomes and oral oncology, for which I've been recognized as a guest speaker at international conferences in Paris, Barcelona, Italy, and London. I received the Youngest Scientist Award at the 3rd International Conference on Dentistry and Oral Health by Bioleague and Apaodent.</p>
+        
+        <p>I have collaborated with prestigious institutions including Harvard University, AIIMS Delhi, Johns Hopkins, and Tata Memorial Hospital on cutting-edge research projects in oncology and exosome research. These collaborations have contributed to breakthrough findings in cancer diagnostics and treatment approaches.</p>
+        
+        <p>
